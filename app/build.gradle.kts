@@ -66,4 +66,12 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Retrofit
+    val retrofit_version = "2.9.0"
+    implementation("com.squareup.retrofit2:converter-moshi:$retrofit_version")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    // Modhiを使用する場合は不要
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+
 }
